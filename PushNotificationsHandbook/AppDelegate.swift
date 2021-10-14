@@ -83,7 +83,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 
-@available(iOS 10, *)
 extension AppDelegate : UNUserNotificationCenterDelegate {
     
     func userNotificationCenter(_ center: UNUserNotificationCenter,
@@ -95,7 +94,11 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
         print(userInfo)
         // Used for testing purposes
         // debugOperation("willPresent")
-        completionHandler([[.banner, .list, .sound]])
+        if #available(iOS 14.0, *) {
+            completionHandler([[.banner, .list, .sound]])
+        } else {
+            completionHandler([[.alert, .sound]])
+        }
     }
 
     func userNotificationCenter(_ center: UNUserNotificationCenter,
@@ -107,6 +110,26 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
         print(userInfo)
         // Used for testing purposes
         // debugOperation("didReceive")
+        guard let score = userInfo["score"] as? String,
+              let country = userInfo["country"] as? String else {
+            completionHandler()
+            return
+        }
+
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        var receiver: PushReceiverViewController
+
+        if #available(iOS 13.0, *) {
+            receiver = storyboard.instantiateViewController(identifier: "PushReceiverViewController") as PushReceiverViewController
+        } else {
+            receiver = storyboard.instantiateViewController(withIdentifier: "PushReceiverViewController") as! PushReceiverViewController
+        }
+
+        receiver.score = score
+        receiver.country = country
+        UIApplication.shared.windows.first?.rootViewController = receiver
+        UIApplication.shared.windows.first?.makeKeyAndVisible()
+
         completionHandler()
     }
 }

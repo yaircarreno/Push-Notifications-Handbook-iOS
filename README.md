@@ -18,4 +18,5 @@ I recommend this book for any actor who participates in designing, implementing 
 
 The reader will also be able to access the public repositories written for Android at:
 
-- [Push Notifications Handbook Android](https://github.com/yaircarreno/Push-Notifications-Handbook-Android)
+- [Push Notifications Handbook Android with Java](https://github.com/yaircarreno/Push-Notifications-Handbook-Android)
+- [Push Notifications Handbook Android with Kotlin](https://github.com/yaircarreno/Push-Notifications-Handbook-Android-Kotlin)

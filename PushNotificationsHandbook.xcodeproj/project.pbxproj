@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9F1EF60F49C41652AD1FFA10 /* Pods_PushNotificationsHandbook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDAB4EF9D972198F5ACFCE2 /* Pods_PushNotificationsHandbook.framework */; };
+		C13C1DA72716688C003B8C83 /* PushReceiverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13C1DA62716688C003B8C83 /* PushReceiverViewController.swift */; };
 		C1600C7F2663279C00E078BF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1600C7E2663279C00E078BF /* GoogleService-Info.plist */; };
 		C1CC65D92662D26F00E24342 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CC65D82662D26F00E24342 /* AppDelegate.swift */; };
 		C1CC65DB2662D26F00E24342 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CC65DA2662D26F00E24342 /* SceneDelegate.swift */; };
@@ -47,6 +48,7 @@
 		6AA24F60816F1D4B664D8CA8 /* Pods-PushNotificationsHandbookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushNotificationsHandbookTests.debug.xcconfig"; path = "Target Support Files/Pods-PushNotificationsHandbookTests/Pods-PushNotificationsHandbookTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9FA8C056B8F7B32C20B57D9B /* Pods-PushNotificationsHandbook-PushNotificationsHandbookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushNotificationsHandbook-PushNotificationsHandbookUITests.release.xcconfig"; path = "Target Support Files/Pods-PushNotificationsHandbook-PushNotificationsHandbookUITests/Pods-PushNotificationsHandbook-PushNotificationsHandbookUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A29CD7607A79B6D24F88B1BE /* Pods_PushNotificationsHandbookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PushNotificationsHandbookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C13C1DA62716688C003B8C83 /* PushReceiverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushReceiverViewController.swift; sourceTree = "<group>"; };
 		C1600C7D2662FDC000E078BF /* PushNotificationsHandbook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PushNotificationsHandbook.entitlements; sourceTree = "<group>"; };
 		C1600C7E2663279C00E078BF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C1CC65D52662D26F00E24342 /* PushNotificationsHandbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushNotificationsHandbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +134,7 @@
 				C1600C7D2662FDC000E078BF /* PushNotificationsHandbook.entitlements */,
 				C1CC65D82662D26F00E24342 /* AppDelegate.swift */,
 				C1CC65DA2662D26F00E24342 /* SceneDelegate.swift */,
+				C13C1DA62716688C003B8C83 /* PushReceiverViewController.swift */,
 				C1CC65DC2662D26F00E24342 /* ViewController.swift */,
 				C1CC65DE2662D26F00E24342 /* Main.storyboard */,
 				C1CC65E12662D27000E24342 /* Assets.xcassets */,
@@ -414,6 +417,7 @@
 			files = (
 				C1CC65DD2662D26F00E24342 /* ViewController.swift in Sources */,
 				C1CC65D92662D26F00E24342 /* AppDelegate.swift in Sources */,
+				C13C1DA72716688C003B8C83 /* PushReceiverViewController.swift in Sources */,
 				C1CC65DB2662D26F00E24342 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
